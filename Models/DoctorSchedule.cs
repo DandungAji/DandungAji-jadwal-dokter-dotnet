@@ -1,7 +1,11 @@
-public class DoctorSchedule
+namespace DoctorScheduleApp.Models
 {
-    public string NamaDokter { get; set; }
-    public string Spesialis { get; set; }
-    public string Hari { get; set; }
-    public string Jam { get; set; }
+    public class DoctorSchedule
+    {
+        public required string? NamaDokter { get; set; }
+        public required string? Spesialis { get; set; }
+        public required string? Hari { get; set; }
+        public required string? Jam { get; set; }
+    }
 }
+
