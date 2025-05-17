@@ -27,7 +27,7 @@ Aplikasi ini mengimplementasikan **Repository Pattern** untuk memisahkan logika 
 
 
 ## Cara Menjalankan
-1. Pastikan MS SQL Server terinstal dan jalankan script SQL untuk membuat database dan stored procedure (lihat `database.sql`).
+1. Pastikan MS SQL Server terinstal dan jalankan script SQL untuk membuat database dan stored procedure (lihat `init_db.sql`).
 2. Update connection string di `appsettings.json`.
 3. Jalankan `dotnet restore` dan `dotnet run`.
 4. Akses aplikasi di browser untuk menguji export Excel dan PDF.
