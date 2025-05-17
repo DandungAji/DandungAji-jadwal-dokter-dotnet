@@ -1,0 +1,28 @@
+@model List<DoctorScheduleApp.Models.DoctorSchedule>
+
+<h2>Jadwal Dokter Spesialis RS Kartini Bandung</h2>
+
+    <table border="1" cellpadding="5" cellspacing="0" class="table">
+        <thead>
+            <tr>
+                <th>Nama Dokter</th>
+                <th>Spesialis</th>
+                <th>Hari</th>
+                <th>Jam</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NamaDokter</td>
+                <td>@item.Spesialis</td>
+                <td>@item.Hari</td>
+                <td>@item.Jam</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+    <a asp-action="ExportToPdf" class="btn btn-danger">Export PDF</a>
+    <a asp-action="ExportToExcel" class="btn btn-success">Export Excel</a>

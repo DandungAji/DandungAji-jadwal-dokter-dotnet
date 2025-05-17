@@ -8,6 +8,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IDoctorRepository, DoctorRepository>();
 
+
 var app = builder.Build();
 
 RotativaConfiguration.Setup(app.Environment.WebRootPath, "Rotativa");
@@ -33,7 +34,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Export}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 
